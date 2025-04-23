@@ -1,4 +1,4 @@
-package com.example.quotemagnet
+package ead.ca2.quotemagnet
 
 import org.junit.Test
 
