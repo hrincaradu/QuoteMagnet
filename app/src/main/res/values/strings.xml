@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">QuoteMagnet</string>
-    <string name="aboutText">About</string>
-    <string name="favouritesText">Favourites</string>
     <string name="settingsText">Settings</string>
     <string name="aboutInfoText" translatable="false">Radu Hrinca and Andrei Mogorean EAD2025</string>
     <string name="welcomeText">Hello

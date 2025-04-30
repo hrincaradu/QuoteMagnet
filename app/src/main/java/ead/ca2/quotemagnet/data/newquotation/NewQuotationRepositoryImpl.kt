@@ -13,22 +13,13 @@ import javax.inject.Inject
 class NewQuotationRepositoryImpl @Inject constructor(
     private val connectivityChecker: ConnectivityChecker,
     private val retrofitDataSource: NewQuotationDataSource,
-    private val settingsRepository: SettingsRepository
+
 
 ): NewQuotationRepository {
 
-    private lateinit var language: String
-    init {
-        CoroutineScope(SupervisorJob()).launch {
-            settingsRepository.getLang().collect { languageCode ->
-                language = languageCode.ifEmpty{"en"}
-            }
-        }
-    }
-
     override suspend fun getNewQuotation(): Result<Quotation> {
         return if (connectivityChecker.isConnectionAvailable()) {
-            retrofitDataSource.getQuotation(language).toDomain()
+            retrofitDataSource.getQuotation().toDomain()
         }
         else {
             Result.failure(NoInternetException())

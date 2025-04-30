@@ -14,15 +14,15 @@ class NewQuotationDataSourceImpl @Inject constructor(
 ) : NewQuotationDataSource {
 
     interface NewQuotationRetrofit {
-        @GET("api/1.0/?method=getQuote&format=json&")
+        @GET("api/quotation/random")
 
-        suspend fun getQuotation(@Query("lang") lang: String): Response<RemoteQuotationDto>
+        suspend fun getQuotation(): Response<RemoteQuotationDto>
     }
     private val retrofitQuotationService = retrofit.create(NewQuotationRetrofit::class.java)
 
-    override suspend fun getQuotation(lang : String): Response<RemoteQuotationDto> {
+    override suspend fun getQuotation(): Response<RemoteQuotationDto> {
         return try {
-            retrofitQuotationService.getQuotation(lang)
+            retrofitQuotationService.getQuotation()
         } catch (e: Exception) {
             Response.error(
                 400,

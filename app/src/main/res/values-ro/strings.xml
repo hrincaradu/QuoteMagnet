@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settingsText">Setari</string>
+    <string name="welcomeText">Bine ai venit! Trageti de ecran in jos pentru a primi un citat.</string>
+    <string name="anonymous">Anonim</string>
+    <string name="refresh">Reimprospatare</string>
+    <string name="delete_all_quotations">Stergeti toate citatele</string>
+    <string name="network_error_message">Problema de retea</string>
+    <string name="unexplainable_error_message">Eroare necunoscuta</string>
+    <string name="no_internet_error_message">Nu sunteti conectat la retea.</string>
+    <string name="English">Engleza</string>
+    <string name="Russian">Rusa</string>
+    <string name="newDesc">Nou</string>
+    <string name="about">Despre</string>
+    <string name="new_quotation">Citat nou</string>
+    <string name="favourites">Favorite</string>
+    <string name="settings">Setari</string>
+    <string name="anonymous_author_no_wiki_page">Autor anonim</string>
+    <string name="no_activity_found">Nu exista pagina</string>
+    <string name="new_quotationLabel">Citat nou</string>
+    <string name="aboutLabel">Despre</string>
+    <string name="delete_all">Stergeti tot</string>
+    <string name="favouritesLabel">Favorite</string>
+    <string name="settingsLabel">Setari</string>
+    <string name="name">Nume</string>
+    <string name="languageTitle">Limba</string>
+    <string name="delete_all_favourite_quotations">Stergeti toate citatele favorite</string>
+    <string name="are_you_sure_you_want_to_delete_all_quotations">Sunteti sigur ca vrei sa stergeti toate citatele?</string>
+    <string name="yes">Da</string>
+    <string name="no">Nu</string>
+</resources>

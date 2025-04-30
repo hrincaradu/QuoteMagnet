@@ -22,7 +22,7 @@ class NewQuotationProviderModule {
 
     @Provides
     @Singleton
-    fun provideRetrofit() : Retrofit = Retrofit.Builder().baseUrl("https://api.forismatic.com/")
+    fun provideRetrofit() : Retrofit = Retrofit.Builder().baseUrl("https://quotationapi-2025-b8g6hvf0eza4d7bk.ukwest-01.azurewebsites.net/")
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
 
